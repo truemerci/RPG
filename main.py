@@ -37,11 +37,9 @@ def play_game():
         if hero1[1]['life'] <= 0 and hero2[1]['life'] <= 0:
             print("It's a draw")
         elif hero1[1]['life'] > 0:
-            hero1[1]['life'] = character[hero1[0]]['life']
             player1.insert(0, hero1)
             print(f"{hero1[0]} win!")
         else:
-            hero2[1]['life'] = character[hero2[0]]['life']
             player2.insert(0, hero2)
             print(f"{hero2[0]} win!")
 
